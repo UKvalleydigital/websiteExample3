@@ -11,6 +11,7 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: #F0E9F9;
   }
   #hero-1946 .cs-container {
     width: 100%;
@@ -105,7 +106,7 @@
     box-sizing: border-box;
     /* 24px - 32px */
     padding: clamp(1.5rem, 3vw, 2rem);
-    background-color: #F7F7F7;
+    background-color: #e6d5fc;
     border-radius: 1.25rem;
     display: flex;
     flex-direction: column;

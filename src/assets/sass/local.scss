@@ -10,6 +10,7 @@
         padding: var(--sectionPadding);
         position: relative;
         z-index: 1;
+        background-color: #ffe0e0;
 
         .cs-container {
             width: 100%;
@@ -140,7 +141,7 @@
                 display: block;
                 height: 100%;
                 width: 0%;
-                background: #1a1a1a;
+                background: var(--secondary);
                 opacity: 1;
                 top: 0;
                 left: 0;
@@ -149,7 +150,7 @@
             }
 
             &:hover {
-                color: var(--primary);
+                color: #fff;
             }
 
             &:hover:before {
@@ -234,6 +235,7 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
+        background-color: #fff5db;
         
         .cs-container {
             width: 100%;
@@ -301,7 +303,7 @@
                 position: absolute;
                 height: 100%;
                 width: 0%;
-                background: #000;
+                background: var(--secondary);
                 opacity: 1;
                 top: 0;
                 left: 0;
@@ -419,7 +421,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #RPsbsr-1587 {
-        background-color: #f7f7f7;
+        background-color: #ffe0e0;
     }
 }
 
@@ -452,6 +454,7 @@
         position: relative;
         /* Prevents overflow from the image going off screen */
         overflow: hidden;
+        background-color: #cce6ff;
 
         .cs-container {
             width: 100%;
@@ -559,7 +562,7 @@
                 position: absolute;
                 height: 100%;
                 width: 0%;
-                background: #000;
+                background: var(--secondary);
                 opacity: 1;
                 top: 0;
                 left: 0;

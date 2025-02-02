@@ -11,6 +11,7 @@
         background-color: #f7f7f7;
         position: relative;
         z-index: 1;
+        background-color: #CCE6FF;
         
         .cs-container {
             width: 100%;
@@ -247,7 +248,7 @@
                 display: block;
                 height: 100%;
                 width: 0%;
-                background: #1a1a1a;
+                background: var(--secondary);
                 opacity: 1;
                 top: 0;
                 left: 0;
@@ -279,6 +280,8 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #contact-1441 {
+        background-color: #CCE6FF;
+
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
