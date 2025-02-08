@@ -101,15 +101,16 @@
         }
 
         .cs-h3 {
-            font-size: calc(20/16 * 1rem);
+            font-size: calc(18/16 * 1rem);
             line-height: 1.2em;
-            font-weight: 700;
+            font-weight: 400;
             margin: 0;
             color: var(--headerColor);
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: calc(8/16 * 1rem);
+            font-family: "Volkhov", Arial, sans-serif;
         }
 
         .cs-item-text {
@@ -219,6 +220,7 @@
 
             .cs-h3 {
                 color: var(--bodyTextColorWhite);
+                font-family: "Volkhov", Arial, sans-serif;
             }
         }
     }

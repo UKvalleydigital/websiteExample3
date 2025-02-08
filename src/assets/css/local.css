@@ -90,15 +90,16 @@
     gap: 0.5rem;
   }
   #RPsbs-1587 .cs-h3, #RPsbsr-1587 .cs-h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.2em;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     color: var(--headerColor);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
+    font-family: "Volkhov", Arial, sans-serif;
   }
   #RPsbs-1587 .cs-item-text, #RPsbsr-1587 .cs-item-text {
     font-size: 0.875rem;
@@ -193,6 +194,7 @@
   }
   body.dark-mode #RPsbs-1587 .cs-h3, body.dark-mode #RPsbsr-1587 .cs-h3 {
     color: var(--bodyTextColorWhite);
+    font-family: "Volkhov", Arial, sans-serif;
   }
 }
 /*-- -------------------------- -->
