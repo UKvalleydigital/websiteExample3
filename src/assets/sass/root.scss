@@ -128,7 +128,7 @@
 /* Fonts and general styles */
 @media only screen and (min-width: 0rem) {
     body,
-    html {
+    html, .cs-button-solid {
         margin: 0;
         overflow-x: hidden;
         padding: 0;
@@ -361,6 +361,16 @@
         z-index: 10000;
         transition: transform .3s;
 
+        .cs-dropdown {
+            .cs-dropdown-button {
+                position: relative;
+                border: none;
+                outline: none;
+                scroll-behavior: smooth;
+                background-color: #fff;
+            }
+        }
+
         &:before {
             content: '';
             width: 100%;
@@ -498,7 +508,6 @@
 
             img {
                 width: auto;
-                height: 100%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
@@ -720,6 +729,16 @@
         #cs-navigation {
             background-color: var(--dark);
 
+            .cs-dropdown {
+                .cs-dropdown-button {
+                    position: relative;
+                    border: none;
+                    outline: none;
+                    scroll-behavior: smooth;
+                    background-color: #2C394B;
+                }
+            }
+
             .cs-logo {
                 /* makes it white */
                 filter: grayscale(1) brightness(1000%);
@@ -766,6 +785,9 @@
         .cs-dropdown {
             color: var(--bodyTextColorWhite);
             position: relative;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
 
             &.cs-active {
                 .cs-drop-ul {
@@ -831,7 +853,14 @@
 @media only screen and (min-width: 64rem) {
     #cs-navigation {
         .cs-dropdown {
-            position: relative;
+                .cs-dropdown-button {
+                    position: relative;
+                    border: none;
+                    outline: none;
+                    scroll-behavior: smooth;
+                    background-color: #fff;
+                }
+            }
 
             &:hover {
                 cursor: pointer;
@@ -847,7 +876,6 @@
                     transform: translateY(0);
                 }
             }
-        }
 
         .cs-drop-icon {
             width: calc(12/16 * 1rem);
@@ -971,6 +999,16 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #cs-navigation {
+            .cs-dropdown {
+                .cs-dropdown-button {
+                    position: relative;
+                    border: none;
+                    outline: none;
+                    scroll-behavior: smooth;
+                    background-color: #082032;
+                }
+            }
+            
             .cs-drop-ul {
                 background-color: var(--dark);
             }
@@ -1017,6 +1055,16 @@
         position: fixed;
         z-index: 10000;
         transition: transform .3s;
+        
+        .cs-dropdown {
+            .cs-dropdown-button {
+                position: relative;
+                border: none;
+                outline: none;
+                scroll-behavior: smooth;
+                background-color: #fff;
+            }
+        }
 
         .cs-top-bar {
             width: 100%;
@@ -1140,7 +1188,6 @@
 
             img {
                 width: auto;
-                height: 100%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
@@ -1179,8 +1226,7 @@
             }
 
             &.cs-active {
-                font-weight: 700;
-                color: var(--headerColor);
+                color: var(--secondary);
             }
         }
 
@@ -1235,6 +1281,16 @@
     body.dark-mode {
         #cs-navigation {
             background-color: var(--dark);
+
+            .cs-dropdown {
+                .cs-dropdown-button {
+                    position: relative;
+                    border: none;
+                    outline: none;
+                    scroll-behavior: smooth;
+                    background-color: #082032;
+                }
+            }
 
             .cs-top-container {
                 &:before {

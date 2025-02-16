@@ -106,7 +106,7 @@
 /* Fonts and general styles */
 @media only screen and (min-width: 0rem) {
   body,
-  html {
+  html, .cs-button-solid {
     margin: 0;
     overflow-x: hidden;
     padding: 0;
@@ -301,6 +301,13 @@
     z-index: 10000;
     transition: transform 0.3s;
   }
+  #cs-navigation .cs-dropdown .cs-dropdown-button {
+    position: relative;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: #fff;
+  }
   #cs-navigation:before {
     content: "";
     width: 100%;
@@ -422,7 +429,6 @@
   }
   #cs-navigation .cs-logo img {
     width: auto;
-    height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -602,6 +608,13 @@
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
   }
+  body.dark-mode #cs-navigation .cs-dropdown .cs-dropdown-button {
+    position: relative;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: #2C394B;
+  }
   body.dark-mode #cs-navigation .cs-logo {
     /* makes it white */
     filter: grayscale(1) brightness(1000%);
@@ -638,6 +651,9 @@
   #cs-navigation .cs-dropdown {
     color: var(--bodyTextColorWhite);
     position: relative;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
   }
   #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
     height: auto;
@@ -688,18 +704,22 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #cs-navigation .cs-dropdown {
+  #cs-navigation .cs-dropdown .cs-dropdown-button {
     position: relative;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: #fff;
   }
-  #cs-navigation .cs-dropdown:hover {
+  #cs-navigation:hover {
     cursor: pointer;
   }
-  #cs-navigation .cs-dropdown:hover .cs-drop-ul {
+  #cs-navigation:hover .cs-drop-ul {
     opacity: 1;
     visibility: visible;
     transform: scaleY(1);
   }
-  #cs-navigation .cs-dropdown:hover .cs-drop-li {
+  #cs-navigation:hover .cs-drop-li {
     opacity: 1;
     transform: translateY(0);
   }
@@ -800,6 +820,13 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #cs-navigation .cs-dropdown .cs-dropdown-button {
+    position: relative;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: #082032;
+  }
   body.dark-mode #cs-navigation .cs-drop-ul {
     background-color: var(--dark);
   }
@@ -833,6 +860,13 @@
     position: fixed;
     z-index: 10000;
     transition: transform 0.3s;
+  }
+  #cs-navigation .cs-dropdown .cs-dropdown-button {
+    position: relative;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: #fff;
   }
   #cs-navigation .cs-top-bar {
     width: 100%;
@@ -943,7 +977,6 @@
   }
   #cs-navigation .cs-logo img {
     width: auto;
-    height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -977,8 +1010,7 @@
     color: var(--primary);
   }
   #cs-navigation .cs-li-link.cs-active {
-    font-weight: 700;
-    color: var(--headerColor);
+    color: var(--secondary);
   }
   #cs-navigation .cs-button-solid {
     font-size: 1rem;
@@ -1023,6 +1055,13 @@
 @media only screen and (min-width: 64rem) {
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
+  }
+  body.dark-mode #cs-navigation .cs-dropdown .cs-dropdown-button {
+    position: relative;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    background-color: #082032;
   }
   body.dark-mode #cs-navigation .cs-top-container:before {
     background-color: rgba(0, 0, 0, 0.2);

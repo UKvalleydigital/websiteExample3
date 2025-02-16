@@ -342,6 +342,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-1716 {
+    background-color: #082032;
+  }
   body.dark-mode #gallery-1716 .cs-title, body.dark-mode #gallery-1716 .cs-text {
     color: var(--bodyTextColorWhite);
   }
@@ -511,6 +514,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-45 {
+    background-color: #262626;
+  }
   body.dark-mode #gallery-45 .cs-title,
   body.dark-mode #gallery-45 .cs-text {
     color: var(--bodyTextColorWhite);
